@@ -74,3 +74,30 @@ iPadOS 17.4.1(2024-03-21)
 ```
 
 以上
+
+---
+
+### おまけ　WEBrickの利用
+
+クローラーの検証はなるべく相手方のサーバに負荷をかけずに行いたいです。  
+以下手順でローカルのWebサーバを使って検証できます。
+
+1. 対象サイトの保存
+
+ブラウザで対象サイトを開き、htmlとして保存します。
+
+2. WEBrickを起動
+```
+$ ruby webrick.rb
+```
+
+3. 参照先URLを編集
+
+以下の要領でローカルサーバを参照するようにします。
+```ios_version_check.rb
+APPLE_SUPPORT_URL = 'https://support.apple.com/ja-jp/HT201222'
+↓
+APPLE_SUPPORT_URL = 'http://localhost:3000/(htmlのパス)'
+```
+
+以上
