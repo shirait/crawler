@@ -21,6 +21,7 @@ GEM
       racc (~> 1.4)
     racc (1.7.3)
     timeout (0.4.1)
+    webrick (1.8.1)
 
 PLATFORMS
   x86_64-linux
@@ -28,6 +29,7 @@ PLATFORMS
 DEPENDENCIES
   mail
   nokogiri
+  webrick
 
 BUNDLED WITH
    2.4.22
