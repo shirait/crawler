@@ -35,7 +35,6 @@ $ rbenv install 3.3.1
 $ cd ~/crawler
 $ rbenv local 3.3.1
 ```
-上記はrbenvを利用する場合の手順です。
 
 3. gemをインストール
 ```
@@ -93,7 +92,7 @@ $ ruby webrick.rb
 
 3. 参照先URLを編集
 
-以下の要領でローカルサーバを参照するようにします。
+「ios_version_check.rb」を以下の通り変更し、ローカルサーバを参照するようにします。
 ```ios_version_check.rb
 APPLE_SUPPORT_URL = 'https://support.apple.com/ja-jp/HT201222'
 ↓
